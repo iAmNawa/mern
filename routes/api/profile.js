@@ -182,6 +182,7 @@ router.post('/education', passport.authenticate('jwt', { session: false }), (req
     .then(profile => {
       const newEdu = {
         school: req.body.school,
+        degree: req.body.degree,
         fieldofstudy: req.body.fieldofstudy,
         from: req.body.from,
         to: req.body.to,

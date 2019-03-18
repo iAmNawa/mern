@@ -70,6 +70,10 @@ const ProfileSchema = new Schema({
         type: String,
         required: true
       },
+      degree: {
+        type: String,
+        required: true
+      },
       fieldofstudy: {
         type: String,
         required: true
