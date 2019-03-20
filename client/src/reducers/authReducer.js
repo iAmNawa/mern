@@ -2,8 +2,7 @@ import { TEST_DISPATCH } from '../actions/types';
 
 const initialState = {
   isAuthenticated: false,
-  user: {},
-  hello: 'test'
+  user: {}
 }
 
 export default function(state = initialState, action) {
