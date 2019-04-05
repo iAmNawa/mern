@@ -11,7 +11,7 @@ module.exports = {
   mongoURI: '',
   secretOrKey: 'secret'
 };  
-</code>
+</code>    
 mongoURI will look like -> 'mongodb://username:password@ds189233.mlab.com:41wqww89/name'
 
 # How to run
