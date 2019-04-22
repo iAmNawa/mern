@@ -13,6 +13,10 @@ module.exports =  function validateExperienceInput(data) {
     errors.school = 'School is required';
   }
 
+  if (Validator.isEmpty(data.degree)) {
+    errors.degree = 'Degree is required';
+  }
+
   if (Validator.isEmpty(data.fieldofstudy)) {
     errors.fieldofstudy = 'Field of study is required';
   }
