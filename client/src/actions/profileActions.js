@@ -90,3 +90,16 @@ export const clearCurrentProfile = () => {
     type: CLEAR_CURRENT_PROFILE
   }
 }
+
+// Delete experience
+export const deleteExperience = id => async dispatch => {
+  try {
+    const res = await axios.delete(`/api/profile/experience/${id}`);
+    dispatch({
+      type: UPDATE_PROFILE,
+      payload: res.data
+    })
+  } catch (err) {
+
+  }
+}
